@@ -27,22 +27,22 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install
-        run: docker-compose run --rm composer install
+        run: docker compose run --rm composer install
 
       - name: Test (PHP latest)
-        run: docker-compose run --rm composer run test
+        run: docker compose run --rm composer run test
 
       - name: Static analysis
-        run: docker-compose run --rm composer run analyse
+        run: docker compose run --rm composer run analyse
 
       - name: Formatting
-        run: docker-compose run --rm composer run lint
+        run: docker compose run --rm composer run lint
 
       - name: Modern code check
-        run: docker-compose run --rm composer run scan
+        run: docker compose run --rm composer run scan
 
       - name: Package security
-        run: docker-compose run --rm composer run check
+        run: docker compose run --rm composer run check
 
       - name: Package version check
-        run: docker-compose run --rm composer run updates
+        run: docker compose run --rm composer run updates
