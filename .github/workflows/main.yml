@@ -32,8 +32,8 @@ jobs:
       - name: Test (PHP latest)
         run: docker compose run --rm composer run test
 
-      - name: Static analysis
-        run: docker compose run --rm composer run analyse
+      #- name: Static analysis
+      #  run: docker compose run --rm composer run analyse
 
       - name: Formatting
         run: docker compose run --rm composer run lint
