@@ -10,6 +10,7 @@ use Tests\Database\Factories\RatingFactory;
 
 final class Rating extends Model
 {
+    /** @use HasFactory<RatingFactory> */
     use HasFactory;
     use Sluggable;
 

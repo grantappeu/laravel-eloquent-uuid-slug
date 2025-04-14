@@ -14,6 +14,7 @@ use Tests\Database\Factories\CartFactory;
  */
 final class Cart extends Model
 {
+    /** @use HasFactory<CartFactory> */
     use HasFactory;
     use Sluggable;
 

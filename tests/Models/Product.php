@@ -15,6 +15,7 @@ use Tests\Database\Factories\ProductFactory;
  */
 final class Product extends Model
 {
+    /** @use HasFactory<ProductFactory> */
     use HasFactory;
     use Sluggable;
 
