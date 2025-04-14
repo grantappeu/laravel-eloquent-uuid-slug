@@ -2,9 +2,9 @@
 
 namespace GrantAppEu\EloquentUuidSlug\Rules;
 
+use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Database\Eloquent\Model;
-use GrantAppEu\EloquentUuidSlug\Sluggable;
 use ReflectionClass;
 
 final class ExistsBySlug implements Rule

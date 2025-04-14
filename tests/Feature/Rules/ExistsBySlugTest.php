@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
+use GrantAppEu\EloquentUuidSlug\Rules\ExistsBySlug;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Validator;
-use GrantAppEu\EloquentUuidSlug\Rules\ExistsBySlug;
 use Tests\Models\Product;
 use Tests\TestCase;
 

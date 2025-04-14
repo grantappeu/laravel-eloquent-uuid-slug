@@ -2,9 +2,9 @@
 
 namespace Tests\Models;
 
+use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Tests\Database\Factories\CartFactory;
 
 /**
