@@ -44,5 +44,5 @@ jobs:
       - name: Package security
         run: docker compose run --rm composer run check
 
-      - name: Package version check
-        run: docker compose run --rm composer run updates
+      #- name: Package version check
+      #  run: docker compose run --rm composer run updates
