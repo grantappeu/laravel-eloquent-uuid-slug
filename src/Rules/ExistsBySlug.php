@@ -12,7 +12,7 @@ final class ExistsBySlug implements Rule
     /**
      * @param class-string<Model> $model
      */
-    public function __construct(protected string $model)
+    public function __construct(private readonly string $model)
     {
     }
 
