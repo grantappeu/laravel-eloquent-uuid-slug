@@ -2,12 +2,12 @@
 
 namespace GrantAppEu\EloquentUuidSlug;
 
+use GrantAppEu\EloquentUuidSlug\Builder\SluggableBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\ColumnDefinition;
 use Illuminate\Support\Fluent;
-use GrantAppEu\EloquentUuidSlug\Builder\SluggableBuilder;
 use Ramsey\Uuid\Uuid;
 
 trait Sluggable

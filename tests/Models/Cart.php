@@ -2,9 +2,9 @@
 
 namespace Tests\Models;
 
+use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Tests\Database\Factories\CartFactory;
 
 /**
@@ -14,6 +14,7 @@ use Tests\Database\Factories\CartFactory;
  */
 final class Cart extends Model
 {
+    /** @use HasFactory<CartFactory> */
     use HasFactory;
     use Sluggable;
 

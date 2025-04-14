@@ -2,14 +2,15 @@
 
 namespace Tests\Models;
 
+use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use GrantAppEu\EloquentUuidSlug\Sluggable;
 use Tests\Database\Factories\RatingFactory;
 
 final class Rating extends Model
 {
+    /** @use HasFactory<RatingFactory> */
     use HasFactory;
     use Sluggable;
 
