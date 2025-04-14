@@ -29,7 +29,7 @@ final class ExistsBySlug implements Rule
 
         assert($model instanceof Model);
         /** @phpstan-ignore-next-line Call to function assert() with false will always evaluate to false. */
-        //assert($model instanceof Sluggable);
+        assert($model instanceof Sluggable);
 
         return $model->withSlug($value)->exists();
     }
